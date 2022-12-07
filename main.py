@@ -1,4 +1,4 @@
-
+import networkx as nx
 
 import Ex6
 
@@ -25,8 +25,14 @@ if __name__ == '__main__':
               [0, 1, 0, 0]]
 
     d = Ex6.build_digraph_logarithm(cycle3)
-
     Ex6.find_cycle(d,0)
+    d1 = Ex6.build_digraph_logarithm(cycle2)
+    Ex6.find_cycle(d1, 0)
+    d2 = Ex6.build_digraph_logarithm(cycle1)
+    Ex6.find_cycle(d2, 0)
+    #nx.single_source_dijkstra_path(d,0)
+
+
     #print(d.edges.data())
    # print(math.log(0.38, 2))
 

@@ -22,9 +22,9 @@ def build_digraph_logarithm(mat):
 def find_cycle(digraph, start):
     try:
         path = nx.single_source_bellman_ford_path(digraph, start)
-        print(path)
+        print("None")
     except NetworkXUnbounded:
-        cycles = nx.find_negative_cycle(digraph,0)
+        cycles = nx.find_negative_cycle(digraph,start)
         print(cycles)
 
 
